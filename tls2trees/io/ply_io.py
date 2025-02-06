@@ -87,4 +87,4 @@ def write_ply(output_name, pc, comments=[]):
 if __name__ == '__main__':
 
     import sys
-    print(read_ply(sys.argv[1]).head())
+    write_ply(sys.argv[1], read_ply(sys.argv[1]))
